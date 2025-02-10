@@ -110,6 +110,54 @@
             <li>reactjs</li>
         </ol>
     </section>
+    <!-- HTML FORMS   -->
+     <form action="index.js" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" maxlength="15" minlength="8" required><br>
+        <label for="tel">mobile number</label><br>
+        <input type="text" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" placeholder="test@email.com" maxlength="60"><br>
+        <label for="password">Input your password here</label><br>
+        <input type="password" maxlength="16" minlength="6" required><br>
+        <label for="password">Re-Enter password</label><br>
+        <input type="password" maxlength="16" minlength="6" required><br>
+        <fieldset id="radios">
+            <legend>Radio buttons</legend>
+            <label for="team">arsenal</label><br>
+            <input type="radio" id="team" name="arsenal"><br>
+            <label for="food">pizza</label><br>
+            <input type="radio" id="food" name="arsenal" checked><br>
+            <label for="drink">juice</label><br>
+            <input type="radio" id="drink" name="arsenal"><br>
+        </fieldset>
+        <p>Please describe why you love the option above</p>
+        <textarea name="eateries" id="eateries" rows="6" cols="40"></textarea>
+        <fieldset id="check-box">
+            <label for="orange">orange</label>
+            <input type="checkbox" value="orange" id="orange">
+            <label for="red">Red</label>
+            <input type="checkbox" value="red" id="red" checked>
+            <label for="yellow">Yellow</label>
+            <input type="checkbox" value="yellow" id="yellow">
+        </fieldset>
+        <p>Please select your favourite fruit</p>
+        <select name="fruits" id="fruit">
+            <option value="select">select</option>
+            <option value="orange">Orange</option>
+            <option value="pineapple">pineapple</option>
+            <option value="mango">mango</option>
+            <option value="apple">apple</option>
+            <option value="pears">pears</option>
+        </select><br>
+
+        <button>Submit</button>
+        <!-- <span><input type="button"  id="submit"></span> -->
+        
+    
+
+     </form>
+     <!-- HTML FORMS -->
     <footer>
         <p>This is our footer section</p>
         <p>
