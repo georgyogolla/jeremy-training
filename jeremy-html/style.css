@@ -1,0 +1,51 @@
+/* cascading style sheet */
+/* .first-style{
+    color: red;
+} */
+
+/* article p:first-of-type{
+    color: red;
+}
+article p:last-of-type{
+    color: green;
+} */
+
+/* Universal Selector */
+/* *{
+    color: red;
+} */
+
+/* Type Selector  */
+/* article {
+    color: yellow;
+} */
+
+/* Class Selectors */
+.p-1 {
+   color: red; 
+}
+
+.p-2{
+    color: green;
+}
+
+/* ID Selectors  */
+#first-id{
+    color: blue;
+}
+
+/* Attribute Selectors  */
+/* [data-type="primary"]{
+    color: aqua;
+} */
+[data-type]{
+    color: darkorchid;
+}
+
+/* [href="https://mountkenyawe.co.ke/"]{
+    color: red;
+} */
+
+[href^="https"]{
+    color: burlywood;
+}
