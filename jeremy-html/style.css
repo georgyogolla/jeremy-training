@@ -21,31 +21,74 @@ article p:last-of-type{
 } */
 
 /* Class Selectors */
-.p-1 {
+/* .p-1 {
    color: red; 
-}
+} */
 
-.p-2{
+/* .p-2{
     color: green;
-}
+} */
 
 /* ID Selectors  */
-#first-id{
+/* #first-id{
     color: blue;
-}
+} */
 
 /* Attribute Selectors  */
 /* [data-type="primary"]{
     color: aqua;
 } */
-[data-type]{
+/* [data-type]{
     color: darkorchid;
-}
+} */
 
 /* [href="https://mountkenyawe.co.ke/"]{
     color: red;
 } */
 
-[href^="https"]{
+/* [href^="https"]{
     color: burlywood;
+} */
+
+[data-type="primary"], article, mark, #first-id{
+    color: aqua;
+}
+
+#first-id:hover{
+    color: red;
+}
+
+/* p:nth-child(even){
+    background-color: blue;
+} */
+
+/* Pseudo-elements differ from pseudo-classes because instead of responding to the platform state, they act as if they are inserting a new element with CSS. Pseudo-elements are also syntactically different from pseudo-classes, because instead of using a single colon (:), we use a double colon (::). */
+.p-1::after{
+    content: ' -20';
+}
+li::marker{
+    content: '- ';
+    color: red;
+}
+
+mark::selection{
+    background-color: white;
+}
+
+li::selection{
+    background-color: rgb(50, 211, 5);
+}
+
+/* any h3 descendant of .sec-1  */
+/* .sec-1 h3{
+    color: darkorange;
+} */
+
+/* direct h3 descendant of .sec-1 */
+/* .sec-1 > h3{
+    color: darkorange;
+} */
+
+.sec-1 > div > h3{
+    color: darkorange;
 }
