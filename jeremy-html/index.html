@@ -13,6 +13,24 @@
 </head>
 <body>
     <main>
+        <div class="absolute-unit">
+            <p class="em-unit">HELLO</p>
+        </div>
+        <div class="all">
+            <p>one</p>
+            <p>two</p>
+        </div>
+        <p class="next-sibling">
+            <p>
+                I have no margin because I am the first child.
+            </p>
+            <p>
+                I have a <code>margin-top</code> because I am a <strong>next sibling</strong>
+            </p>
+            <p>
+                I am also a, <strong>next sibling</strong>, also got a top margin
+            </p>
+        </p>
         <article class="sec-1">
             <h3>Child 1</h3>
             <p>Child 2</p>
@@ -63,7 +81,7 @@
     <img src="" alt="">
     <i></i>
     <em></em>
-    <b></b>
+    <b class="bld">bolder</b>
     <span></span>
     <video src=""></video>
     <iframe src="" frameborder="0"></iframe>

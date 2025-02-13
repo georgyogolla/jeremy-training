@@ -50,12 +50,15 @@ article p:last-of-type{
     color: burlywood;
 } */
 
-[data-type="primary"], article, mark, #first-id{
-    color: aqua;
+[data-type="primary"],
+article,
+mark,
+#first-id {
+  color: aqua;
 }
 
-#first-id:hover{
-    color: red;
+#first-id:hover {
+  color: red;
 }
 
 /* p:nth-child(even){
@@ -63,20 +66,20 @@ article p:last-of-type{
 } */
 
 /* Pseudo-elements differ from pseudo-classes because instead of responding to the platform state, they act as if they are inserting a new element with CSS. Pseudo-elements are also syntactically different from pseudo-classes, because instead of using a single colon (:), we use a double colon (::). */
-.p-1::after{
-    content: ' -20';
+.p-1::after {
+  content: " -20";
 }
-li::marker{
-    content: '- ';
-    color: red;
-}
-
-mark::selection{
-    background-color: white;
+li::marker {
+  content: "- ";
+  color: red;
 }
 
-li::selection{
-    background-color: rgb(50, 211, 5);
+mark::selection {
+  background-color: white;
+}
+
+li::selection {
+  background-color: rgb(50, 211, 5);
 }
 
 /* any h3 descendant of .sec-1  */
@@ -89,6 +92,42 @@ li::selection{
     color: darkorange;
 } */
 
-.sec-1 > div > h3{
-    color: darkorange;
+.sec-1 > div > h3 {
+  color: darkorange;
+}
+
+/* Next Sibling Selector */
+.next-sibling > p {
+    color: yellow;
+    margin-top: 2.5em;
+}
+
+li:first-of-type + li{
+    color: rosybrown;
+    font-weight: bold;
+}
+
+li:has(+ li:last-of-type){
+    color: green;
+    font-size: 3rem;
+}
+
+.li * {
+    margin-top: 4rem;
+}
+/* relative unit  */
+/* body{
+    font-size: 60px;
+} */
+/* absolute units  */
+.bld{
+    font-size: 3rem;
+}
+
+.absolute-unit{
+    font-size: 12px;
+    border: 1px dashed red;
+}
+.em-unit{
+    font-size: 6em;
 }
