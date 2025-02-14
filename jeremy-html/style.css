@@ -131,3 +131,66 @@ li:has(+ li:last-of-type){
 .em-unit{
     font-size: 6em;
 }
+
+/* absolut units "px" */
+/* The root element is always <html> */
+/* html{
+    font-size: 48px;
+} */
+
+/* .def-font{
+    font-size: 30px;
+}  */
+
+/* Relative Units - They change relative to other elements size*/
+/* root em - rem 
+em  -  fully changes relative to parent element of the children elements
+%  - changes relative to the normal width of a parent container
+vw 
+vh */
+.child-el-1{
+    font-size: 3rem;
+}
+
+.child-el-2{
+    font-size: 1.5rem;
+}
+
+.child-el-3{
+    font-size: 5rem;
+}
+
+.em-font{
+    font-size: 20px;
+}
+
+.em-1{
+    font-size: 1.5em;
+}
+
+.btn-em{
+    font-size: 0.8em;
+}
+
+.img-el{
+    width: 100%;
+    border: 1px solid red;
+}
+
+img{
+    width: 33.33%;
+    height: 70vh;
+}
+
+.vw-vh{
+    width: 33.33vw;
+    height: 70vh;
+}
+
+/* Box Model  */
+.box-model{
+    width: 100px;
+    height: 50px;
+    padding: 1.5rem;
+    border: 5px solid rgb(84, 4, 244);
+}
