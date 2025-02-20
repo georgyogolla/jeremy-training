@@ -1,4 +1,10 @@
+
 /* cascading style sheet */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* .first-style{
     color: red;
 } */
@@ -219,4 +225,17 @@ img {
 
 .nav {
   border: 2px dashed red;
+}
+
+.border{
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: red; */
+  border-radius: 2px;
+  box-sizing: border-box;
 }
