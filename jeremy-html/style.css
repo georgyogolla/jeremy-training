@@ -194,12 +194,17 @@ img {
 }
 
 /* Box Model  */
-.box-model {
+/* .box-model {
+  position: relative;
+  left: 50px;
+  top: 50px;
   width: 100px;
   height: 50px;
   padding: 1.5rem;
   border: 5px solid rgb(84, 4, 244);
-}
+} */
+
+
 
 /* padding  */
 /* .home{ */
@@ -239,3 +244,34 @@ img {
   border-radius: 2px;
   box-sizing: border-box;
 }
+
+/* CSS Positioning  */
+.box-model {
+  position: fixed;
+  right: 100px;
+  /* top: 50px; */
+  width: 100px;
+  height: 50px;
+  padding: 1.5rem;
+  border: 5px solid rgb(84, 4, 244);
+}
+.relative{
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+}
+.absolute{
+/* position: absolute; */
+bottom: 60px;
+}
+
+.sticky{
+  position: sticky;
+  color: #fff;
+  padding: 0.5rem;
+  top: 20px;
+  background-color: aqua;
+  border: 1px dotted yellow;
+}
+
