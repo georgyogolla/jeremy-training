@@ -1,5 +1,11 @@
 
 /* cascading style sheet */
+/* Declaring CSS Variables */
+:root{
+  --yellow-yellow: yellow;
+  --primary-font-size: 2.5rem;
+  --primary-border: 2px dashed green;
+}
 body{
   margin: 0;
   padding: 0;
@@ -268,10 +274,23 @@ bottom: 60px;
 
 .sticky{
   position: sticky;
-  color: #fff;
+  color: var(--yellow-yellow);
+  /* color: #fff; */
   padding: 0.5rem;
   top: 20px;
-  background-color: aqua;
+
+  /* background-color: var(--yellow-yellow); */
+  /* background-color: aqua; */
   border: 1px dotted yellow;
+}
+
+/* CSS VARIABLES */
+/* Using CSS Variables  */
+.css-variable{
+  color: #E50046;
+  background-color: rgba(0, 255, 0, 0.5);
+  /* background-color: var(--yellow-yellow); */
+  border: var( --primary-border);
+  font-size: var(--primary-font-size);
 }
 
