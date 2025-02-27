@@ -294,3 +294,73 @@ bottom: 60px;
   font-size: var(--primary-font-size);
 }
 
+/* CSS Gradients */
+.linear-vertical{
+  margin-top: 4rem;
+  margin-left: 4rem;
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  background-image: linear-gradient(red, yellow);
+}
+
+/* styling kenyan */
+.kenyan-flag{
+  width: 400px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.black{
+  width: 200px;
+  height: 30px;
+  border: 1px solid #fff;
+  background-image: linear-gradient(to right, black, black);
+}
+.first-white-strip{
+  width: 50px;
+  height:5px;
+  border: 1px solid white;
+  background-image: linear-gradient(to right, white white);
+}
+
+.red{
+  width: 200px;
+  height: 30px;
+  border: 1px solid red;
+  background-image: linear-gradient(to right, red, red);
+}
+.second-white-strip{
+  width: 50px;
+  height:5px;
+  border: 1px solid white;
+  background-image: linear-gradient(to right, white white);
+}
+
+.green{
+  width: 200px;
+  height: 30px;
+  border: 1px solid green;
+  background-image: linear-gradient(to right, green,  green);
+}
+
+.green2{
+  width: 200px;
+  height: 30px;
+  border: 1px solid green;
+  background-image: linear-gradient(to bottom right, yellow,rgba(180, 79, 183, 0.5));
+}
+
+.repeating-linear{
+  width: 200px;
+  height: 30px;
+  border: 1px solid green;
+  background-image: repeating-linear-gradient(yellow, green 20%, red 30%);
+}
+
+
+
+
