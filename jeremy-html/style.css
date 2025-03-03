@@ -361,6 +361,26 @@ bottom: 60px;
   background-image: repeating-linear-gradient(yellow, green 20%, red 30%);
 }
 
+/* .radial{
+  width: 200px;
+  height: 100px;
+  border: 1px dashed blue;
+  background-image: radial-gradient(red, green, yellow);
+} */
 
+/* .radial{
+  width: 200px;
+  height: 100px;
+  border: 1px dashed blue;
+  background-image: radial-gradient(#090 
+  40%, #fff, #2a4f32);
+} */
+
+.radial{
+  width: 200px;
+  height: 100px;
+  border: 1px dashed blue;
+  background-image: repeating-conic-gradient(from 45deg at 50% 50%, #009900ff 0%, #ffffffff 10%, #2a4f32ff 20%);
+}
 
 
