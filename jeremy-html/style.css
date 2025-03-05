@@ -383,4 +383,57 @@ bottom: 60px;
   background-image: repeating-conic-gradient(from 45deg at 50% 50%, #009900ff 0%, #ffffffff 10%, #2a4f32ff 20%);
 }
 
+/* CSS DISPLAY  */
+.block{
+  display: inline-block;
+}
+.inline{
+  display: none;
+}
+
+/* USING FLEXBOX */
+.flex-container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-item{
+  /* width: 100px;
+  height: 20px; */
+  background-color: red;
+}
+.flex-item-2{
+  /* width: 100px;
+  height: 20px; */
+  color: white;
+  background-color: rgb(0, 21, 255);
+}
+
+.second-flex{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.box-1{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+.box-2{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(28, 147, 7);
+}
+.box-3{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(207, 184, 12);
+}
+.box-4{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(147, 18, 93);
+}
+
+
+
 
