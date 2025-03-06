@@ -1,12 +1,11 @@
-
 /* cascading style sheet */
 /* Declaring CSS Variables */
-:root{
+:root {
   --yellow-yellow: yellow;
   --primary-font-size: 2.5rem;
   --primary-border: 2px dashed green;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -210,8 +209,6 @@ img {
   border: 5px solid rgb(84, 4, 244);
 } */
 
-
-
 /* padding  */
 /* .home{ */
 /* padding: 3rem 0.5rem 6rem 2rem; */
@@ -238,7 +235,7 @@ img {
   border: 2px dashed red;
 }
 
-.border{
+.border {
   margin-bottom: 1rem;
   font-size: 0.8rem;
   background-color: red;
@@ -261,18 +258,18 @@ img {
   padding: 1.5rem;
   border: 5px solid rgb(84, 4, 244);
 }
-.relative{
+.relative {
   position: relative;
   width: 100px;
   height: 50px;
   border: 1px solid red;
 }
-.absolute{
-/* position: absolute; */
-bottom: 60px;
+.absolute {
+  /* position: absolute; */
+  bottom: 60px;
 }
 
-.sticky{
+.sticky {
   position: sticky;
   color: var(--yellow-yellow);
   /* color: #fff; */
@@ -286,16 +283,16 @@ bottom: 60px;
 
 /* CSS VARIABLES */
 /* Using CSS Variables  */
-.css-variable{
-  color: #E50046;
+.css-variable {
+  color: #e50046;
   background-color: rgba(0, 255, 0, 0.5);
   /* background-color: var(--yellow-yellow); */
-  border: var( --primary-border);
+  border: var(--primary-border);
   font-size: var(--primary-font-size);
 }
 
 /* CSS Gradients */
-.linear-vertical{
+.linear-vertical {
   margin-top: 4rem;
   margin-left: 4rem;
   width: 100px;
@@ -305,7 +302,7 @@ bottom: 60px;
 }
 
 /* styling kenyan */
-.kenyan-flag{
+.kenyan-flag {
   width: 400px;
   height: 200px;
   margin: 0;
@@ -314,47 +311,51 @@ bottom: 60px;
   border-radius: 2px;
 }
 
-.black{
+.black {
   width: 200px;
   height: 30px;
   border: 1px solid #fff;
   background-image: linear-gradient(to right, black, black);
 }
-.first-white-strip{
+.first-white-strip {
   width: 50px;
-  height:5px;
+  height: 5px;
   border: 1px solid white;
   background-image: linear-gradient(to right, white white);
 }
 
-.red{
+.red {
   width: 200px;
   height: 30px;
   border: 1px solid red;
   background-image: linear-gradient(to right, red, red);
 }
-.second-white-strip{
+.second-white-strip {
   width: 50px;
-  height:5px;
+  height: 5px;
   border: 1px solid white;
   background-image: linear-gradient(to right, white white);
 }
 
-.green{
+.green {
   width: 200px;
   height: 30px;
   border: 1px solid green;
-  background-image: linear-gradient(to right, green,  green);
+  background-image: linear-gradient(to right, green, green);
 }
 
-.green2{
+.green2 {
   width: 200px;
   height: 30px;
   border: 1px solid green;
-  background-image: linear-gradient(to bottom right, yellow,rgba(180, 79, 183, 0.5));
+  background-image: linear-gradient(
+    to bottom right,
+    yellow,
+    rgba(180, 79, 183, 0.5)
+  );
 }
 
-.repeating-linear{
+.repeating-linear {
   width: 200px;
   height: 30px;
   border: 1px solid green;
@@ -376,64 +377,81 @@ bottom: 60px;
   40%, #fff, #2a4f32);
 } */
 
-.radial{
+.radial {
   width: 200px;
   height: 100px;
   border: 1px dashed blue;
-  background-image: repeating-conic-gradient(from 45deg at 50% 50%, #009900ff 0%, #ffffffff 10%, #2a4f32ff 20%);
+  background-image: repeating-conic-gradient(
+    from 45deg at 50% 50%,
+    #009900ff 0%,
+    #ffffffff 10%,
+    #2a4f32ff 20%
+  );
 }
 
 /* CSS DISPLAY  */
-.block{
+.block {
   display: inline-block;
 }
-.inline{
+.inline {
   display: none;
 }
 
 /* USING FLEXBOX */
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: row-reverse;
 }
-.flex-item{
+.flex-item {
   /* width: 100px;
   height: 20px; */
   background-color: red;
 }
-.flex-item-2{
+.flex-item-2 {
   /* width: 100px;
   height: 20px; */
   color: white;
   background-color: rgb(0, 21, 255);
 }
 
-.second-flex{
+.second-flex {
+  width: 800px;
+  height: 200px;
+  border: 1px solid purple;
   display: flex;
-  flex-direction: column-reverse;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  /* align-content: flex-end; */
+  /* flex-wrap: wrap; */
 }
-.box-1{
+.box-1 {
+  align-self: flex-start;
+  /* flex-basis: 100px;
+  flex-grow: 2; */
+  /* order: 3; */
   width: 100px;
   height: 100px;
   background-color: aqua;
 }
 
-.box-2{
+.box-2 {
+  /* flex-grow: 3;
+  order: 1; */
   width: 100px;
   height: 100px;
   background-color: rgb(28, 147, 7);
 }
-.box-3{
+.box-3 {
+  /* flex-grow: 1; */
   width: 100px;
   height: 100px;
   background-color: rgb(207, 184, 12);
 }
-.box-4{
+.box-4 {
+  /* flex-grow: 2; */
   width: 100px;
   height: 100px;
   background-color: rgb(147, 18, 93);
 }
-
-
-
-
