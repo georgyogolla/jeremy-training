@@ -455,3 +455,48 @@ img {
   height: 100px;
   background-color: rgb(147, 18, 93);
 }
+
+/* CSS GRID  */
+.grid-container{
+  display: grid;
+  /* grid-template-columns: 95px 1fr; */
+  /* grid-template-columns: 15%  60% 25%; */
+  /* column-gap: 25px; */
+  /* grid-auto-columns: 150px; */
+  grid-template-rows: 95px 1fr 70px;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  /* row-gap: 20px; */
+  /* grid-auto-rows: 100px; */
+  background-color: yellow;
+  margin: 10px;
+  padding: 7px;
+}
+
+.second-grid{
+  display: inline-grid;
+  color: white !important;
+  width: 800px;
+  height: 200px;
+  background-color: orangered;
+  margin: 10px;
+  padding: 10px;
+}
+
+.grid-item{
+  width: 100px;
+  height: 100px;
+  background-color: #e50046;
+}
+.grid-item-2{
+  width: 100px;
+  height: 100px;
+  background-color: #6bca0b;
+}
+
+.grid-item-3{
+  width: 100px;
+  height: 100px;
+  background-color: #180f8d;
+}
+
