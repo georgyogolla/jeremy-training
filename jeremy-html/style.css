@@ -686,3 +686,40 @@ body {
   position: absolute;
   width: 50px;
 }
+
+@media screen and (max-width: 600px){
+  .transit{
+    background-color: red;
+    color: blue;
+    font-size: 0.75rem;
+  }
+}
+
+/* @media screen and (hover: hover) {
+  body:hover {
+    color: white;
+    background: black;
+  }
+} */
+
+/* Using ranged values  */
+/* @media (min-width: 30em) and (max-width: 50em) {
+  .transit{
+    background-color: green;
+    color: yellow;
+    font-size: 1.5rem;
+  }
+} */
+
+/* @media screen and (min-width: 600px) and (orientation: landscape) {
+  body {
+    color: blue;
+  }
+} */
+
+
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+  body {
+    color: chocolate;
+  }
+}
