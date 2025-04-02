@@ -718,8 +718,14 @@ body {
 } */
 
 
-@media screen and (min-width: 600px), screen and (orientation: landscape) {
+/* @media screen and (min-width: 600px), screen and (orientation: landscape) {
   body {
     color: chocolate;
+  }
+} */
+
+@media (not (width < 600px)) and (not (width > 1000px)) {
+  body {
+    color: #6bca0b;
   }
 }
