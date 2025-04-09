@@ -16,7 +16,20 @@ let numTwo = 4;
 console.log(numOne + numTwo);
 
 // Updating variables
-console.log(numOne - 1);
-console.log(numOne);
-console.log(numOne = numOne - 1);
-console.log(numOne);
+console.log(numOne - 1);//2
+console.log(numOne); //3
+console.log(numOne = numOne - 1);//2
+console.log(numOne);// 2
+
+const fName = "Jeremy";
+console.log(fName);
+// fName = "Kabambe";
+// console.log(fName) // TypeError: Assignment to constant variable.
+const pi = 3.14
+const monthsInaYear = 12;
+
+// Booleans
+let isLoggedIn = true;
+console.log(isLoggedIn)
+
+
