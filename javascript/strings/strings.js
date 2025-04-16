@@ -58,3 +58,31 @@ let replaceFirstTehehe = laughter.replace("tehehe", "haha");
 console.log(replaceFirstTehehe);
 let replaceAllTehehe = laughter.replaceAll("huu", "haha");
 console.log(replaceAllTehehe);
+
+// String escapes
+let escapeOne = "hello this is Jeremy,\nand he is learning javascript";
+console.log(escapeOne);
+
+let escapeTwo = 'hello this is Jeremy,and he didn\'t is learning javascript';
+console.log(escapeTwo);
+
+let escapeThree = "hello this is Jeremy,\"I am learning javascript\"";
+console.log(escapeThree);
+
+let escapeFour = "him\\her";
+console.log(escapeFour);
+
+// STRING TEMPLATE LITERALS
+// Template literals are strings that allow
+// embedded expressions, which will be evaluated
+// and then turned into a resulting string.
+let literalOne = `Sum of 3 and 4 is ${3 + 4}`;
+console.log(literalOne);
+
+let fName = "Jeremy";
+let lName = "Osuo";
+let fullName = `my full name is ${fName} ${lName}`;
+console.log(fullName);
+
+
+
