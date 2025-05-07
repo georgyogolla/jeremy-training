@@ -31,3 +31,16 @@ let a = 5;
 // 00000000000000000000000000000101
 
 a <<= 2; // 20
+
+// The logical AND assignment (&&=) operator only evaluates the right operand and assigns to the left if the left operand is truthy.
+
+let a = 1;
+let b = 0;
+
+a &&= 2;
+console.log(a);
+// Expected output: 2
+
+b &&= 2;
+console.log(b);
+// Expected output: 0
