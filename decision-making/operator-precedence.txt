@@ -1,0 +1,9 @@
+
+OPERATOR
+PRECEDENCE
+NOT (!) has higher precedence than && and ||
+&& has higher precedence than ||
+!
+&&
+| |
+You can alter this using parens ()

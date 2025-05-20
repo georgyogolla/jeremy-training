@@ -44,3 +44,41 @@ console.log(a);
 b &&= 2;
 console.log(b);
 // Expected output: 0
+
+
+// The logical OR assignment (||=) operator only evaluates the right operand and assigns to the left if the left operand is falsy.
+
+const a = { duration: 50, title: "" };
+
+a.duration ||= 10;
+console.log(a.duration);
+// Expected output: 50
+
+a.title ||= "title is empty.";
+console.log(a.title);
+// Expected output: "title is empty."
+
+const x = {
+    get value() {
+      return 1;
+    },
+    set value(v) {
+      console.log("Setter called");
+    },
+  };
+  
+  x.value ||= 2;
+
+
+//   The nullish coalescing assignment (??=) operator, also known as the logical nullish assignment operator, only evaluates the right operand and assigns to the left if the left operand is nullish (null or undefined).
+
+const a = { duration: 50};
+
+a.speed ??= 25;
+console.log(a.speed);
+// Expected output: 25
+
+a.duration ??= 10;
+console.log(a.duration);
+// Expected output: 50
+  
