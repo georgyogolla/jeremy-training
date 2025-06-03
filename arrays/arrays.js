@@ -8,3 +8,15 @@ console.log(firstArray);
 console.log(firstArray[3]);
 console.log(firstArray.length);
 console.log(firstArray[firstArray.length - 1]);
+
+// Array methods
+const fruits = [];
+fruits.push('orange', 'banana', 'apple');
+fruits.push('hello');
+fruits[2] = 'mango';
+
+fruits.length = 6;
+fruits.length = 3;
+console.log(fruits.length);
+console.log(fruits);
+
