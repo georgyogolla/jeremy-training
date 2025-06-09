@@ -50,6 +50,35 @@ console.log(flattened.shift());
 
 // unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array. 
 console.log(flattened.unshift('cars', 200, ['javascript', 'html', 'css']));
-console.log(flattened)
+console.log(flattened);
+
+// slice(): Returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included).
+const nums = [1, 2, 3, 4, 5];
+const slicedNums = nums.slice(1, 4);
+console.log(slicedNums);
+
+// using slice to make a copy of an array
+const numsCopy = nums.slice();
+console.log(numsCopy); 
+
+// The toReversed() method is simple to use.
+// It creates a reversed version of the array without modifying the original one. 
+// Here’s the basic syntax:
+
+const numbers = [10, 20, 30, 40, 50];
+const reversedNumbers = numbers.toReversed();
+console.log(reversedNumbers);
+console.log(numbers);
+
+// toSpliced: Create New Arrays by Splicing Without Mutation
+// const newArray = array.toSpliced(start, deleteCount, item1, item2, ...);
+const fruit = ['apple', 'banana', 'cherry', 'date'];
+// Create a new array by removing 'banana' and adding 'blueberry' without changing the original
+const newFruit = fruit.toSpliced(1, 1, 'blueberry');
+console.log(newFruit);
+console.log(fruit);
+
+
+
 
 
