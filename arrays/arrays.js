@@ -79,6 +79,14 @@ console.log(newFruit);
 console.log(fruit);
 
 
+// The with method is a new and powerful tool introduced in JavaScript to help replace elements in an array without changing the original array.
+const movies = ['peaky blinders', '24 hours', 'originals'];
+const newMovie = movies.with(2, 'Vampire diaries');
+console.log(newMovie);
+
+
+
+
 
 
 
