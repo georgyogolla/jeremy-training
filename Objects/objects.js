@@ -10,3 +10,41 @@ const subaru = {
 }
 
 console.log(subaru);
+
+//2. Creation Using new Object() Constructor
+const lenovoThinkPad = new Object();
+lenovoThinkPad.color = "black";
+lenovoThinkPad.model = "T480S";
+lenovoThinkPad.RAM = "16GB";
+lenovoThinkPad.storage = "512SSD";
+lenovoThinkPad.price = "Kshs.40000";
+console.log(lenovoThinkPad);
+
+// 1. Accessing Object Properties
+// You can access an object’s properties using either dot notation or bracket notation
+console.log(`yearOfManufacture: ${subaru.year}`);
+console.log(`Lenovo Thinkpad ${lenovoThinkPad.model} Costs: ${lenovoThinkPad.price}`);
+// using brackets to access properties in an object 
+console.log(lenovoThinkPad["storage"]);
+
+// 2. Modifying Object Properties
+// Properties in an object can be modified by reassigning their values.
+lenovoThinkPad.storage = "256SSD";
+console.log(lenovoThinkPad);
+
+// 3. Adding Properties to an Object
+// You can dynamically add new properties to an object using dot or bracket notation.
+const meals = {breakfast: "tea"};
+meals.lunch = "ugali";
+meals.supper = "Rice";
+console.log(meals);
+
+// 4. Removing Properties from an Object
+// The delete operator removes properties from an object.
+const newCar = {model: "Tesla", color: "Red", year: 2020};
+delete newCar.color;
+console.log(newCar);
+
+
+
+
