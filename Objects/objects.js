@@ -3,10 +3,10 @@
 // 1. Creation Using Object Literal
 // The object literal syntax allows you to define and initialize an object with curly braces {}, setting properties as key-value pairs.
 const subaru = {
-    model: 'imprezza',
-    year: 2018,
-    color: 'grey',
-    2020: 'year of modigication'
+    newModel: 'imprezza',
+    yearOfManufacture: 2018,
+    oririnalColor: 'grey',
+    2020: 'year of modification'
 }
 
 console.log(subaru);
@@ -44,6 +44,35 @@ console.log(meals);
 const newCar = {model: "Tesla", color: "Red", year: 2020};
 delete newCar.color;
 console.log(newCar);
+
+// 5. Checking if a Property Exists
+// You can check if an object has a property using the in operator or hasOwnProperty() method.
+const programmingLanguages = {
+    python: "data science",
+    javascript: "web applications",
+    java: "android",
+    c: "systems applications"
+}
+
+console.log("python" in programmingLanguages);
+console.log(programmingLanguages.hasOwnProperty("Golang"));
+
+// 7. Merging Objects
+// Objects can be merged using Object.assign() or the spread syntax { ...obj1, ...obj2 }.
+
+const mergedCars = {...subaru, ...newCar};
+console.log(mergedCars);
+
+const assignedObjects = Object.assign({}, programmingLanguages, meals, subaru, newCar);
+console.log(assignedObjects);
+
+// 8. Object Length
+// You can find the number of properties in an object using Object.keys().
+console.log(Object.keys(assignedObjects).length);
+
+// Recognizing a JavaScript Object
+// To check if a value is an object, use typeof and verify it's not null.
+console.log(typeof assignedObjects === "object" && assignedObjects !== null);
 
 
 
