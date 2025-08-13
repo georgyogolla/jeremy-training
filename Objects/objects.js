@@ -51,7 +51,8 @@ const programmingLanguages = {
     python: "data science",
     javascript: "web applications",
     java: "android",
-    c: "systems applications"
+    c: "systems applications", 
+    123: "Js Object's Keys are always strings"
 }
 
 console.log("python" in programmingLanguages);
@@ -73,6 +74,22 @@ console.log(Object.keys(assignedObjects).length);
 // Recognizing a JavaScript Object
 // To check if a value is an object, use typeof and verify it's not null.
 console.log(typeof assignedObjects === "object" && assignedObjects !== null);
+
+// Deleting a property in an Object
+const newPerson = {
+    age: "20",
+    race: "Black",
+    height: "5 inches",
+    eyeColor: "Blue",
+    country: "Kenya",
+    gender: "male"
+}
+console.log(delete newPerson.eyeColor);
+console.log(newPerson);
+
+// checking for length in an Object
+console.log(Object.keys(newPerson).length);
+console.log(Object.values(newPerson).length);
 
 
 
