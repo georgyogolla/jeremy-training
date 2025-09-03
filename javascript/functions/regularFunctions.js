@@ -85,3 +85,20 @@ function addSquares(a, b){
 }
 const sum = addSquares(2, 4);
 console.log(sum);
+
+
+function cubed(a){
+    //loop
+    return a * a * a;
+}; // function scope
+// create an array
+const cubes = cubed(2);
+console.log(cubes);
+
+
+let name = "Jeremy";// globally scoped variable
+if(name !== null){
+    let name = "George"; // locally scoped variable
+    console.log(`Name in scope is ${name}`);
+};
+console.log(`Name out of  scope is ${name}`);
