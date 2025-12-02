@@ -11,7 +11,7 @@ function sum() {
   };
 }
 const res1 = sum();
-console.log(res1());
+// console.log(res1());
 
 var num3 = 4; // globally scoped variable
 function sum2() {
@@ -47,3 +47,23 @@ function total() {
 }
 var totalled = total();
 console.log(totalled());
+
+// A closure is only needed to use variables from an outer scope. Since this is the very first-level outer scope (meaning the global scope) and it's not inside any function, the sum function is already capturing it in its own scope. So no additional closure is created.
+var num1 = 2;
+function sum() {
+  var num2 = 3;
+  return num1 + num2;
+}
+console.dir(sum);
+
+// Self-Contained Closures
+(function () {
+  var s1 = 5;
+  var s2 = 10;
+  function sumAll() {
+    return s1 + s2;
+  }
+  console.log(sumAll());
+})();
+
+//  a closure doesn't really hold the values themselves. It holds a reference to the variables.
