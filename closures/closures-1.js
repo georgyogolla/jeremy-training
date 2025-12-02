@@ -12,3 +12,38 @@ function sum() {
 }
 const res1 = sum();
 console.log(res1());
+
+var num3 = 4; // globally scoped variable
+function sum2() {
+  var num4 = 3; // function scope
+  return function () {
+    // var num5 = 6;
+    // console.log(num4);
+    return num3 + num4;
+  };
+}
+
+var nums = sum2();
+console.log(nums());
+
+// Creating Private Properties with Closures
+function bankAccount(initialBalance) {
+  var balance = initialBalance;
+  return function () {
+    return balance;
+  };
+}
+var account = bankAccount(100000);
+console.log(account());
+
+// Understanding Closure Mechanics
+var nums1 = 4;
+function total() {
+  var sums2 = 2;
+  var sums = 3;
+  return function () {
+    return sums;
+  };
+}
+var totalled = total();
+console.log(totalled());
