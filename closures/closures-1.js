@@ -67,3 +67,12 @@ console.dir(sum);
 })();
 
 //  a closure doesn't really hold the values themselves. It holds a reference to the variables.
+// Using IIFE with let
+(function () {
+  let multOne = 4;
+  let multTwo = 3;
+  function product() {
+    return multOne * multTwo;
+  }
+  console.log(product());
+})();
